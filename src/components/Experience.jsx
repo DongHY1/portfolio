@@ -8,7 +8,8 @@ export default function Experience() {
 
             <Environment preset="city" />
             <mesh>
-                <PresentationControls global>
+                <PresentationControls global rotation={[0.13, 0.1, 0]} polar={[- 0.4, 0.2]}
+                    azimuth={[- 1, 0.75]} config={{ mass: 2, tension: 400 }}>
                     <Float rotationIntensity={0.4}>
                         <primitive object={computer.scene} position-y={-1.2} />
                     </Float>
